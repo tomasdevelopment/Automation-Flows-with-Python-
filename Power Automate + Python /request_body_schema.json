@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "file_content": {
+            "type": "string",
+            "description": "Base64 encoded content of the Excel file."
+        },
+        "file_name": {
+            "type": "string",
+            "description": "Name of the file being uploaded.",
+            "default": "MissingTest.xlsx",
+            "enum": [
+                "MissingTest.xlsx"
+            ]
+        }
+    },
+    "required": [
+        "file_content",
+        "file_name"
+    ]
+}
