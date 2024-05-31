@@ -1,0 +1,5 @@
+#This project uses Python and Power Automate
+To create a Flow that connects data transfoermed from a csv file in python and then sends an email to specific recipients using a power automate flow.
+
+It only uses Json Structure and Python code to automate an organizationalf low.
+
