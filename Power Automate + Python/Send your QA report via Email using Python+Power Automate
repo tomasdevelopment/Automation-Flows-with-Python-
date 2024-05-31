@@ -1,0 +1,65 @@
+import pandas as pd
+import json
+import requests
+import os
+
+# Path to the original Excel file
+original_file_path = "/work/Missing Time/Report QA.xlsx"
+
+# Function to read and display the Excel file to ensure it exists and can be read properly
+def read_excel_file(file_path):
+    try:
+        df = pd.read_excel(file_path)
+        print("File read successfully.")
+        # Display the dataframe to verify the content
+        print(df)
+        return df
+    except Exception as e:
+        print(f"Error reading the Excel file: {e}")
+        return None
+
+# Function to send the CSV data to the Power Automate flow
+def send_data_to_flow(flow_url, data, file_name):
+    try:
+        # Prepare the data dictionary with the file content and name
+        data_dict = {
+            "file_content": data,
+            "file_name": file_name
+        }
+        
+        # Set the headers to indicate JSON content type
+        headers = {'Content-Type': 'application/json'}
+        
+        # Make the POST request to the Power Automate HTTP trigger URL
+        response = requests.post(flow_url, headers=headers, data=json.dumps(data_dict))
+        
+        # Check if the request was successful
+        response.raise_for_status()
+        
+        # Print the status code and response text to verify success
+        print(f"Status Code: {response.status_code}, Response: {response.text}")
+
+        return response.text
+
+    except requests.exceptions.HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err}")
+        print(f"Response content: {response.content}")
+    except Exception as err:
+        print(f"Other error occurred: {err}")
+
+# Read the original Excel file into a DataFrame
+df = read_excel_file(original_file_path)
+
+if df is not None:
+    # Convert the DataFrame to a CSV string
+    csv_data = df.to_csv(index=False)
+    print(f"DataFrame converted to CSV string: {csv_data[:100]}...")  # Print first 100 chars for verification
+
+    # Use the new URL provided by Power Automate after setting it to "Anyone with the link"
+    flow_url = 'https://prod-70.westus.logic.azure.com:443/workflows/4ee1d2586b084b93a05ada3a1d999d02/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=YnXfg-xm3x9rcmt-0cG4Tz2UqyJwgy5VCTbtpv5iGAk'
+    response = send_data_to_flow(flow_url, csv_data, "ReportsQA.csv")
+
+    if response:
+        print(f"Response from Power Automate: {response}")
+else:
+    print("Failed to read the original Excel file.")
