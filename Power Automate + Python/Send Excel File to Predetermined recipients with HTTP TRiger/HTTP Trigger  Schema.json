@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "file1_content": {
+            "type": "string"
+        },
+        "file1_name": {
+            "type": "string"
+        },
+        "file2_content": {
+            "type": "string"
+        },
+        "file2_name": {
+            "type": "string"
+        }
+    }
+}
