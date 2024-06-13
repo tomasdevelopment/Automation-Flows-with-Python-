@@ -1,0 +1,2 @@
+@{base64ToBinary(triggerOutputs()?['body/file1_content'])
+}
