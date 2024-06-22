@@ -61,8 +61,8 @@ def merge_dataframes_from_sheets(sheets_dict, hcdf):
             print(f"Required columns are missing in sheet {sheet_name} or hcdf.")
             continue
 
-        # Merge the DataFrames on the "TimeExpensesManager" and "FullName" columns
-        merged_df = pd.merge(df, hcdf[['FullName', 'idlogin']], left_on='TimeExpensesManager', right_on='FullName', how='left')
+        # Merge the DataFrames on the "Manager" and "FullName" columns
+        merged_df = pd.merge(df, hcdf[['FullName', 'idlogin']], left_on='Manager', right_on='FullName', how='left')
         # Rename the "idlogin" column to "Manager Email" and append '@.net'
         merged_df['Manager Email'] = merged_df['idlogin_y'] + '@youremaildomain.net'
 
