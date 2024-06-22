@@ -63,8 +63,8 @@ def merge_dataframes_from_sheets(sheets_dict, hcdf):
 
         # Merge the DataFrames on the "TimeExpensesManager" and "FullName" columns
         merged_df = pd.merge(df, hcdf[['FullName', 'idlogin']], left_on='TimeExpensesManager', right_on='FullName', how='left')
-        # Rename the "LionLogin" column to "Manager Email" and append '@publicisgroupe.net'
-        merged_df['Manager Email'] = merged_df['idlogin_y'] + '@publicisgroupe.net'
+        # Rename the "idlogin" column to "Manager Email" and append '@.net'
+        merged_df['Manager Email'] = merged_df['idlogin_y'] + '@youremaildomain.net'
 
         # Drop rows where "Manager Email" is NaN
         merged_df.dropna(subset=['Manager Email'], inplace=True)
@@ -99,7 +99,7 @@ if sheets_dict is not None:
         print(recipients_df.head())
 
         # Save the filtered sheets to a single Excel file
-        combined_file = 'Combined_Central_Roar_QA.xlsx'
+        combined_file = 'Combined_QA.xlsx'
         save_dataframes_to_excel(combined_file, filtered_sheets_dict)
 
         # Encode the combined file to base64
@@ -122,7 +122,7 @@ if sheets_dict is not None:
             "file2_name": "email_recipients.json"
         }
 
-        flow_url = 'https://prod-14.westus.logic.azure.com:443/workflows/d87234331c4f41f3bf064d1f7d0c123/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=UQvE8Gdi1m38zf_-9oGJh-123'
+        flow_url = 'https://prod-14.westus.logic.azure.com:443/workflows/123/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=UQvE8Gdi1m38zf_-9oGJh-123'
         
         # Send the JSON payload to the Power Automate flow
         response = send_data_to_flow(flow_url, payload)
