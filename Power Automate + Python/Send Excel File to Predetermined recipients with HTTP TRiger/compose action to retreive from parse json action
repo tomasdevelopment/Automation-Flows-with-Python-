@@ -1,1 +1,1 @@
-@{body('Parse_JSON')?['recipients']}
+@{body('Parse_JSON')?['recipientsnames']}
