@@ -21,7 +21,7 @@ def save_dataframes_to_excel(file_path, df_dict):
     print(f"DataFrames saved to {file_path} successfully.")
 
 # Function to encode file content to base64
-def encode_file_to_base64(file_path):
+def encodebase_64(file_path):
     with open(file_path, 'rb') as file:
         file_content = file.read()
     return base64.b64encode(file_content).decode('utf-8')
@@ -52,34 +52,41 @@ def send_data_to_flow(flow_url, json_data):
     except Exception as err:
         print(f"Other error occurred: {err}")
 
-# Function to merge dataframes and get unique manager emails
-def merge_dataframes_from_sheets(sheets_dict, hcdf):
-    manager_emails = set()
+def merge_dataframes_from_vendors(sheets_dict, vdf):
+    # Set to collect vendor emails
+    vendor_emails = set()
+
+    # Check for required columns in vdf first to avoid repeated checking in the loop
+    if not {'VendorName', 'VendorEmail'}.issubset(vdf.columns):
+        print("Required columns are missing in the vendor dataframe.")
+        return pd.DataFrame(columns=['Vendor Email'])
+
     for sheet_name, df in sheets_dict.items():
-        # Ensure the necessary columns are present in both DataFrames
-        if "Manager" not in df.columns or "Name" not in hcdataset.columns or "idlogin" not in hcdataset.columns:
-            print(f"Required columns are missing in sheet {sheet_name} or hcdf.")
+        # Ensure the necessary columns are present in the sheet DataFrame
+        if "Vendor" not in df.columns:
+            print(f"Required 'Vendor' column is missing in sheet {sheet_name}.")
             continue
 
-        # Merge the DataFrames on the "Manager" and "FullName" columns
-        merged_df = pd.merge(df, hcdf[['FullName', 'idlogin']], left_on='Manager', right_on='FullName', how='left')
-        # Rename the "idlogin" column to "Manager Email" and append '@.net'
-        merged_df['Manager Email'] = merged_df['idlogin_y'] + '@youremaildomain.net'
+        try:
+            # Merge the DataFrames on the "Vendor" column from df and "VendorName" column from vdf
+            merged_df = pd.merge(df, vdf[['VendorName', 'VendorEmail']], left_on='Vendor', right_on='VendorName', how='left')
 
-        # Drop rows where "Manager Email" is NaN
-        merged_df.dropna(subset=['Manager Email'], inplace=True)
+            # Use the existing 'VendorEmail' column directly
+            merged_df['Vendor Email'] = merged_df['VendorEmail']
 
-        # Collect unique "Manager Email" entries
-        manager_emails.update(merged_df['Manager Email'].unique())
+            # Drop rows where "Vendor Email" is NaN and update unique emails
+            vendor_emails.update(merged_df['Vendor Email'].dropna().unique())
+
+        except Exception as e:
+            print(f"An error occurred while processing sheet {sheet_name}: {e}")
 
     # Convert the set to a DataFrame
-    final_df = pd.DataFrame(list(manager_emails), columns=['Manager Email'])
-
+    final_df = pd.DataFrame(list(vendor_emails), columns=['Vendor Email'])
     print("DataFrames from all sheets merged and processed successfully.")
     return final_df
 
 # Read the original Excel file into a dictionary of DataFrames
-original_file_path = "/work/Hours QA .xlsx"
+original_file_path = "/work/MainReport.xlsx"
 sheets_dict = read_excel_file(original_file_path)
 
 # Assuming hcdataset is already defined and available
@@ -87,42 +94,39 @@ sheets_dict = read_excel_file(original_file_path)
 if sheets_dict is not None:
     # Get unique manager emails
     # Define the sheet names you want to process
-    sheet_names = ['Leave_Holiday task errors', 'Off time with reti', 'Incorrect Tasks']
+    sheet_names = ['report1', 'report2', 'report3']
 
     # Filter sheets_dict to only include the relevant sheets
     filtered_sheets_dict = {k: v for k, v in sheets_dict.items() if k in sheet_names}
 
     # Call the function to merge dataframes
-    recipients_df = merge_dataframes_from_sheets(filtered_sheets_dict, hcdataset)
+    recipients_df = merge_dataframes_from_vendors(filtered_sheets_dict, hcdataset)
     
     if recipients_df is not None:
         print(recipients_df.head())
 
-        # Save the filtered sheets to a single Excel file
-        combined_file = 'Combined_QA.xlsx'
-        save_dataframes_to_excel(combined_file, filtered_sheets_dict)
-
+     
         # Encode the combined file to base64
-        combined_base64 = encode_file_to_base64(combined_file)
+        combined_base64 = encodebase_64(combined_file)
 
         # Convert the recipients DataFrame to a semicolon-separated string
         recipients_string = dataframe_to_email_string(recipients_df)
         #mock
 
         # Convert the recipients string to a JSON structure
-        recipients_json = json.dumps({"recipients": recipients_string})
+        recipientsemail_json = json.dumps({"recipients": recipients_string})
 
         print("Files created successfully.")
 
         # Prepare the JSON payload
         payload = {
             "file1_content": combined_base64,
-            "file1_name": "Final_QA.xlsx",
-            "file2_content": recipients_json,
+            "file1_name": "finalreport.xlsx",
+            "file2_content": recipientsemail_json,
             "file2_name": "email_recipients.json"
         }
 
-        flow_url = 'https://prod-14.westus.logic.azure.com:443/workflows/123/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=UQvE8Gdi1m38zf_-9oGJh-123'
+        flow_url = 'https://prod-14.westus.logic.azure.com:123/workflows/123/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.123&sig=123-9oGJh-123'
         
         # Send the JSON payload to the Power Automate flow
         response = send_data_to_flow(flow_url, payload)
