@@ -41,7 +41,7 @@ print("JSON Payload:")
 print(json_payload)
 
 # Define the URL for the automate flow
-url = 'https://prod-142.westus.logic.azure.com/workflows/c2fe29240204403bb662356128760e93/triggers/manual/paths/invoke/{JSON}?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=npKk7lyBoVn30QigywtgBglQj2Z88hwpQJGsFkrGG98'
+url = 'https://prod-142.westus.logic.azure.com/workflows/c2fe29240204403bb662356128760e93/triggers/manual/paths/invoke/{JSON}?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=npKk7lyBoVn30QigywtgBglQj2Z88hwpQJGsFkr12398'
 
 # Headers for the POST request
 headers = {
