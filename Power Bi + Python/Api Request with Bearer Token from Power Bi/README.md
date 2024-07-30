@@ -1,6 +1,7 @@
 One of the limitation when pulling api's from power bi is the lack of an Authorization header in the Http request parameters option from select from web,
 
-![image](https://github.com/user-attachments/assets/fe6016b5-99cd-4681-b2d5-05d3959c1ed0)
+<img width="545" alt="headerslimitations" src="https://github.com/user-attachments/assets/33aa4ea9-a277-474a-b4fe-a4c1f1d47142">
+
 
 
 Python Get Data with Bearer Token Instructions:
@@ -54,5 +55,6 @@ only copy and paste the link is enough, but if you open your data source you'll 
 URL Example:
 https://yourserver.azureoraws.net/source/db/table?token=13token
 
-![image](https://github.com/user-attachments/assets/800ad200-ead0-45b8-9c42-bc0889a2d734)
+<img width="523" alt="Screen 1 no bearer" src="https://github.com/user-attachments/assets/a64c62aa-ba04-420e-ad4c-a611c4c3b28d">
+
 
