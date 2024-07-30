@@ -5,14 +5,17 @@ One of the limitations when pulling APIs from Power BI is the lack of an Authori
 
 
 
-**Python Get Data with Bearer Token Instructions:
-**
+**Python Get Data with Bearer Token Instructions:**
 
 
 Get Data, from other
+
+
 <img width="667" alt="Python Screen 1" src="https://github.com/user-attachments/assets/43406601-2572-405e-adc8-e8f0cfd10368">
 
 Look for Python on the search bar
+
+
 <img width="504" alt="Python Screen 2" src="https://github.com/user-attachments/assets/6d261c45-cbf1-4b04-977a-7958d8e3db82">
 
 Write your Python Script, make sure you have pip installed your libraries first
@@ -24,6 +27,8 @@ Write your Python Script, make sure you have pip installed your libraries first
 **Mcode Instructions**
 
 Get data from a blank query
+
+
 <img width="310" alt="Mcode Scrypt 1" src="https://github.com/user-attachments/assets/4918b373-681e-4db5-91b3-e6b0b4d25a0f">
 
 
@@ -61,14 +66,19 @@ Close and apply
 
 
 
-**Way 3, using API without required tokens:
-**
+**Way 3, using API without required tokens:**
+
+
+
 Alternatively, if your API does not require Headers, and your token API URL looks like this, you are going to be able to skip all these steps and simply load from the web. Only copy and paste the link is enough, but if you open your data source, you'll notice you will be using basic open file as JSON, then anonymous authentication.
 
 URL Example:
 https://yourserver.azureoraws.net/source/db/table?token=13token
 
 <img width="523" alt="Screen 1 no bearer" src="https://github.com/user-attachments/assets/a64c62aa-ba04-420e-ad4c-a611c4c3b28d">
+
+
+
 Add here the limitation of Python: 250 thousand rows, queries that take longer than 30 minutes will time out, and refine the article. Be very careful not to modify image links.
 
 
