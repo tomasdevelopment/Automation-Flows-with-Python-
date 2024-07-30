@@ -1,0 +1,46 @@
+import requests
+import pandas as pd
+
+# Define a class for handling Bearer token authentication in API requests
+class AuthenticationBearer(requests.auth.AuthBase):
+    def __init__(self, token):
+        # Store the token for future use
+        self.token = token
+
+    def __call__(self, r):
+        # Attach the Bearer token to the request headers
+        r.headers["authorization"] = "Bearer " + self.token
+        return r
+
+# Define the API endpoint URL
+api_url = "https://yourapiordb.azure/aws.net/source/yourdb/yourtable"
+# Authentication token for the API
+token = "yourbearertoken"
+# Instantiate the AuthenticationBearer class with the provided token
+auth_instance = AuthenticationBearer(token)
+
+# Attempt to retrieve data from the API
+response = requests.get(api_url, auth=auth_instance)
+
+# Check if the API call was successful
+if response.status_code == 200:
+    data = response.json()
+    # Check if the expected data key exists in the response
+    if "data" in data:
+        data = data["data"]
+    else:
+        print("Key 'data' not found in the API response.")
+        data = []
+else:
+    print('Error in API call')
+    data = []
+
+# Attempt to process the data from the API response
+try:
+    if data:
+        # Normalize JSON data into a pandas DataFrame
+        df = pd.json_normalize(data)
+        # Convert normalized data into a DataFrame
+        df = pd.DataFrame(df)
+except Exception as e:
+    print(f"An error occurred: {e}")
