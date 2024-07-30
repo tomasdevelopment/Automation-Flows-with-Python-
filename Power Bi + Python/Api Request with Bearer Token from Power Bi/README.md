@@ -50,7 +50,7 @@ Pro tip: Uncheck "Use original column as prefix" so you don't have to make as mu
 Way 3, using api without required tokens:
 
 Alternatively if your api does not require Headers, and your token api url looks like this, you are going to be able to skip all this steps and simply load from web,
-using basic open file as Json, then anonymous authentication.
+only copy and paste the link is enough, but if you open your data source you'll notice you will be using basic open file as Json, then anonymous authentication.
 URL Example:
 https://yourserver.azureoraws.net/source/db/table?token=13token
 
