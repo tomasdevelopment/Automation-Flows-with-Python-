@@ -1,60 +1,61 @@
-One of the limitation when pulling api's from power bi is the lack of an Authorization header in the Http request parameters option from select from web,
+In Power BI, the lack of a direct option to include an Authorization header in the HTTP request parameters when pulling data from APIs is a significant limitation. This issue often arises when dealing with APIs that require a Bearer token or other types of authorization.
 
-<img width="545" alt="headerslimitations" src="https://github.com/user-attachments/assets/33aa4ea9-a277-474a-b4fe-a4c1f1d47142">
+**Python Method for API Data Retrieval with Bearer Token**
+To circumvent this limitation, one can use the Python scripting option available in Power BI to fetch data from APIs that require authentication. Here’s a step-by-step guide:
 
+Enable Python in Power BI:
 
+Navigate to Get Data > Other > Search for Python.
+Ensure you have Python installed and configured in Power BI, along with necessary libraries (like requests for making HTTP requests).
+Write Python Script:
 
-Python Get Data with Bearer Token Instructions:
+Use the Python script editor in Power BI to write a script that fetches data from the API using the requests library. The script typically looks like this:
+python
+Copy code
+import requests
+import pandas as pd
 
-Get Data, from other 
-<img width="667" alt="Python Screen 1" src="https://github.com/user-attachments/assets/43406601-2572-405e-adc8-e8f0cfd10368">
-Look for Python on the search bar
-<img width="504" alt="Python Screen 2" src="https://github.com/user-attachments/assets/6d261c45-cbf1-4b04-977a-7958d8e3db82">
-Write your Python Scrypt, make sure you have pip installed your  libraries first
+url = "https://api.example.com/data"
+headers = {
+    "Authorization": "Bearer YOUR_TOKEN_HERE"
+}
+response = requests.get(url, headers=headers)
+data = response.json()
+df = pd.json_normalize(data)
+Limitations with Python Integration:
 
-<img width="528" alt="Python Screen 3" src="https://github.com/user-attachments/assets/7105e7b5-65be-49a4-8447-16cf638c47c6">
+Row Limit: Power BI has a row limit of 250,000 rows when importing data via Python scripts.
+Timeouts: Queries that take longer than 30 minutes to execute will time out, which can be a constraint for larger datasets or slower APIs.
 
-Mcode Instructions
+**
+M Code Method for Handling JSON Data
+**
+Another approach involves using Power BI's M code for handling JSON data. This is useful when the API response is in JSON format and you need to transform it within Power BI.
 
-1) Get data from a blank query
-   
-<img width="310" alt="Mcode Scrypt 1" src="https://github.com/user-attachments/assets/4918b373-681e-4db5-91b3-e6b0b4d25a0f">
+Get Data from a Blank Query:
 
-2) Start the query steps using = Json.Document(Web.Contents()) Mcode formula
-   
-<img width="524" alt="Mcode Scrypt 2" src="https://github.com/user-attachments/assets/97dd6de3-3652-478e-be7d-d6061867c0a0">
+Use Json.Document(Web.Contents("your_api_url")) to fetch the data.
+Transform Data:
 
-3) Click on the lists you've pulled from your json formula which represent your api nested values
-<img width="346" alt="Mcode Scrypt 3 cLOCK ON LISTS" src="https://github.com/user-attachments/assets/542ceb2d-7b76-4f0a-a0c1-7be1bb35716b">
+Navigate through the JSON structure, converting lists and records into a tabular format.
+Use the "Convert to Table" option and handle any delimiters appropriately.
+Normalization and Cleaning:
 
+Ensure the JSON data is normalized and any hierarchical data is appropriately flattened.
+Finalizing the Data Model:
 
-4)Convert the API response into a table format, ensuring that any data fields separated by delimiters are properly split into individual columns. This process involves normalizing the JSON structure and handling delimiters to create a clean, structured dataset.
-
-
-<img width="613" alt="Mcode Scrypt 4 Convert to table" src="https://github.com/user-attachments/assets/403c861c-a4ae-44a5-9c15-963c6bbcd735">
-
-
-<img width="518" alt="Mcode Scrypt 5 sELECT dELIMITERS" src="https://github.com/user-attachments/assets/f24285d2-5413-4a4a-949f-61cd2c249fb2">
-
-<img width="613" alt="Mcode Scrypt 4 Convert to table" src="https://github.com/user-attachments/assets/8439d4d7-5efa-4ceb-b924-c763227cc0b8">
-
-Pro tip: Uncheck "Use original column as prefix" so you don't have to make as much modification on the namings for your visuals later on. Unless you want to specifically reference the table
-
-<img width="253" alt="Mcode Scrypt 6 Uncheck use original column as prefix unless you want to referentiate the original table name" src="https://github.com/user-attachments/assets/2eccde8f-0d3f-43d1-817d-8bb09423461f">
-
-5) Close and apply
-
-<img width="853" alt="Mcode Scrypt 6 close and apply" src="https://github.com/user-attachments/assets/c0e7164e-b83e-464c-8cc2-1f882dfdee66">
-
-
-
-Way 3, using api without required tokens:
-
-Alternatively if your api does not require Headers, and your token api url looks like this, you are going to be able to skip all this steps and simply load from web,
-only copy and paste the link is enough, but if you open your data source you'll notice you will be using basic open file as Json, then anonymous authentication.
-URL Example:
-https://yourserver.azureoraws.net/source/db/table?token=13token
-
-<img width="523" alt="Screen 1 no bearer" src="https://github.com/user-attachments/assets/a64c62aa-ba04-420e-ad4c-a611c4c3b28d">
+Uncheck "Use original column as prefix" to simplify column naming.
+Apply transformations and load the data into your Power BI model.
 
 
+**
+Using APIs Without Authentication
+For APIs that do not require authentication, the process is straightforward:**
+
+Directly Load Data:
+
+Use the "From Web" option and paste the API URL. Power BI will use the data directly, assuming anonymous authentication is sufficient.
+Example:
+
+An API URL like https://yourserver.azureoraws.net/source/db/table?token=13token can be directly loaded without additional configuration.
+By understanding these methods and their limitations, you can effectively manage data import in Power BI, even when dealing with APIs requiring advanced authentication mechanisms.
