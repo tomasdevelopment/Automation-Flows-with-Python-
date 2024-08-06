@@ -10,6 +10,7 @@ API Key: Obtain your API key from the NASA API portal.
 Python Libraries: Ensure you have libraries like requests and pandas installed.
 Power BI Desktop: Install Power BI Desktop for running Python scripts.
 Step 1: Get Data from NASA API
+
 Obtain API Key: Go to NASA API Portal and sign up for an API key if you haven’t already.
 
 Python Script to Fetch Data:
