@@ -1,70 +1,46 @@
+Integrating Python with Power BI for ETL Using NASA's Asteroid Data API
+
+
 ![Alt text](3dgraph.png)
 
-
-Python and Power BI Integration for ETL
 Overview
-This guide demonstrates how to integrate Python with Power BI to pull data from an API that requires authorization headers, such as NASA’s asteroid data API. This process includes data extraction, transformation, and loading (ETL) steps to show Python’s capability to extend Power BI’s functionality.
+This guide outlines how to integrate Python with Power BI to fetch, transform, and visualize data from NASA’s asteroid data API. The ETL (Extract, Transform, Load) process showcases Python’s capability to enhance Power BI’s functionality.
 
 Prerequisites
 API Key: Obtain your API key from the NASA API portal.
-Python Libraries: Ensure you have libraries like requests and pandas installed.
-Power BI Desktop: Install Power BI Desktop for running Python scripts.
-Step 1: Get Data from NASA API
+Python Libraries: Ensure you have requests and pandas installed.
+Power BI Desktop: Install Power BI Desktop to run Python scripts.
+Step 1: Fetch Data from NASA API
+1.1 Obtain API Key
+Visit the NASA API portal to sign up and get your API key.
 
-Obtain API Key: Go to NASA API Portal and sign up for an API key if you haven’t already.
-
-Python Script to Fetch Data:
-Create a Python script to fetch data using the API key. Here’s a sample script:
-
-python
-Copy code
-import requests
-import pandas as pd
-
-# Replace 'YOUR_API_KEY' with your actual NASA API key
-api_key = 'YOUR_API_KEY'
-url = f'https://api.nasa.gov/neo/rest/v1/neo/browse?api_key={api_key}'
-
-response = requests.get(url)
-data = response.json()
-
-# Extract data and convert to DataFrame
-asteroids = pd.json_normalize(data['near_earth_objects'])
-This script retrieves asteroid data from NASA and normalizes it into a DataFrame.
+1.2 Fetch Data
+Create a Python script to pull data from the API. In Power BI, go to Home -> Get Data -> Python script and paste your script to load the data.
 
 Step 2: Apply Transformations
-In Power BI, you can apply transformations to the data retrieved by Python. Here’s how:
-
-Load Data into Power BI:
+2.1 Load Data into Power BI
 
 Open Power BI Desktop.
-Go to Home -> Get Data -> Python script.
-Run Python Script:
+Navigate to Home -> Get Data -> Python script.
+Paste your Python script and click OK.
+2.2 Ensure Libraries
+Confirm that all necessary Python libraries are installed in your environment.
 
-Paste the Python script into the editor and click OK.
-Ensure all required libraries are installed in your Python environment.
-Transform Data:
+2.3 Transform Data
+Once the data is loaded as a DataFrame in Power BI, apply transformations such as filtering, normalization, and calculated columns.
 
-After loading, you’ll see the data as a DataFrame in Power BI.
-Apply necessary transformations such as filtering, normalization, and creating calculated columns.
-For example, in the Python script, you could apply transformations like:
-
-python
-Copy code
-# Additional transformations
-asteroids['Diameter_Max_KM'] = asteroids['estimated_diameter.kilometers.estimated_diameter_max']
-asteroids['Miss_Distance_KM'] = asteroids['miss_distance.kilometers']
-asteroids['Threat_Rank'] = asteroids['threat_score']
 Step 3: Visualize Data
-Create Visualizations:
+3.1 Create Visualizations
+Utilize Power BI’s visualization tools to create charts and graphs from your transformed data. For instance, use scatter plots to represent asteroid diameters and miss distances.
 
-Use Power BI’s visualization tools to create charts, graphs, and other visualizations from the transformed data.
-For example, use scatter plots to show asteroid diameters and miss distances.
+3.2 Custom 3D Plots
+For advanced visualizations, generate 3D plots using Python directly within Power BI. Custom code snippets for such plots are available in the repository.
 
-Custom 3D Plots:
-
-To showcase advanced capabilities, generate 3D plots using Python directly in Power BI as power bi does not have its own built in . Here’s a code snippet for creating a 3D scatter plot, you can find it on the repository.
 Limitations
+Data Row Limitations: Power BI’s Python integration supports up to 250,000 rows. Filter or aggregate data if necessary.
+Query Timeouts: Queries exceeding 30 minutes may time out. Optimize scripts and queries to mitigate this issue.
+Conclusion
+By integrating Python with Power BI, you can efficiently handle API data requiring authorization, perform complex data transformations, and create sophisticated visualizations. This process demonstrates how Python can extend Power BI’s capabilities, providing a powerful toolkit for data analysis and visualization.
 Data Row Limitations: Power BI’s Python integration can handle up to 250,000 rows. If your dataset exceeds this, consider filtering or aggregating data.
 Query Timeouts: Queries that take longer than 30 minutes may time out. Optimize your script and queries to avoid this issue.
 Conclusion
