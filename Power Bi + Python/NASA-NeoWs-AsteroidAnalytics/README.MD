@@ -1,5 +1,5 @@
+![Alt text](3dgraph.png)
 
-Here’s a detailed README for demonstrating how to integrate Python with Power BI for data extraction, transformation, and loading (ETL) using NASA's asteroid data API. The guide showcases how Python can extend Power BI's capabilities, particularly in handling APIs that require authorization headers, which Power BI struggles with natively.
 
 Python and Power BI Integration for ETL
 Overview
