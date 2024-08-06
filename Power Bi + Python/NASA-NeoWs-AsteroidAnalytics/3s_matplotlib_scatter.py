@@ -55,7 +55,9 @@ for idx, row in dangerous.iterrows():
             row['Miss_Distance_KM'], 
             row['Threat_Rank'], 
             f"{row['Name.1']} (Rank: {row['Threat_Rank']})", 
-            fontsize=10)
+            fontsize=12.5,
+            verticalalignment='bottom',  # Align text vertically
+            horizontalalignment='center')  # Center text horizontally
 
 # Set labels
 ax.set_xlabel('Diameter (km)')
