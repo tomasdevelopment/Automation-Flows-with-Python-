@@ -1,0 +1,6 @@
+import pandas as pd
+
+dataset['Hazard_Classification'] = dataset['Is_Potentially_Hazardous'].map({True: 'Dangerous', False: 'Not Dangerous'})
+dataset = dataset[dataset['Is_Potentially_Hazardous'] == True] #remove this if you want all asteroids
+dataset['Diameter_Max_KM'] = dataset['Diameter_Max_KM'].astype(float) #convert to float
+dataset.sort_values(by='Diameter_Max_KM',ascending=False, inplace=True) #sort from largest to smallest
