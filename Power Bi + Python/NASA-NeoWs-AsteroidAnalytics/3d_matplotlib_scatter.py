@@ -66,9 +66,9 @@ for idx, row in dangerous.iterrows():
             fontweight='bold')  # Make text bold
 
 # Set labels with bold fonts
-ax.set_xlabel('Diameter (km)', color='white', fontsize=14, fontweight='bold')
-ax.set_ylabel('Miss Distance (km)', color='white', fontsize=14, fontweight='bold')
-ax.set_zlabel('Threat Rank', color='white', fontsize=14, fontweight='bold')
+ax.set_xlabel('Diameter (km)', color='white', fontsize=16, fontweight='bold')
+ax.set_ylabel('Miss Distance (km)', color='white', fontsize=16, fontweight='bold')
+ax.set_zlabel('Threat Rank', color='white', fontsize=16, fontweight='bold')
 
 # Custom legend with bold text
 legend_elements = [
@@ -77,7 +77,7 @@ legend_elements = [
     Line2D([0], [0], marker='o', color='w', markerfacecolor='yellow', markersize=15, label='Low Threat Rank (Rank 7-8)'),
     Line2D([0], [0], marker='o', color='w', markerfacecolor='green', markersize=15, label='No Threat (Rank 9)')
 ]
-ax.legend(handles=legend_elements, title='Threat Rank Categories', facecolor='black', edgecolor='white', fontsize='medium', title_fontsize='13')
+ax.legend(handles=legend_elements, title='Threat Rank Categories', facecolor='black', edgecolor='white', fontsize='large', title_fontsize='13')
 for text in ax.get_legend().get_texts():
     text.set_color('white')
 ax.get_legend().get_title().set_color('white')
