@@ -35,7 +35,7 @@ def process_chunk(chunk, lambda_url):
 
 ufc_df = preprocess_dataframe(ufc_df)
 
-lambda_url = "https://yourapi.execute-api.us-east-apinumversion.amazonaws.com/default/yourfunctionname"
+lambda_url = "https://123.execute-api.us-east-2.amazonaws.com/default/yourfunctionname"
 
 chunk_size = 100  # Adjust this value based on your data and Lambda limits
 chunks = chunk_dataframe(ufc_df, chunk_size)
