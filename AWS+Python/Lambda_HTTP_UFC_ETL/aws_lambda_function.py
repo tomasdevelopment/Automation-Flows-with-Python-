@@ -1,25 +1,34 @@
 import json
 import pandas as pd
 
+
+
 def filter_ufc_winners(df):
-    # Create a copy of the DataFrame to avoid modifying the original
     df = df.copy()
-    
-    # Ensure all column names are lowercase
     df.columns = df.columns.str.lower()
+    # Debugging: Print original columns
+    print("Original columns:", df.columns)
     
-    # Get only the winners
     winners = df[((df['winner'] == 'Red') & (df['r_fighter'] == df['r_fighter'])) |
                  ((df['winner'] == 'Blue') & (df['b_fighter'] == df['b_fighter']))]
     
-    # Create a list of relevant columns to include
-    relevant_columns = ['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class']
+    relevant_columns = ['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class', 'country']
     
-    # Create DataFrame with winners and the relevant columns
+    # Create winner_name column
+    winners['winner_name'] = winners.apply(lambda row: row['r_fighter'] if row['winner'] == 'Red' else row['b_fighter'], axis=1)
+    
+    # Extract country from location
+   
+    
+    # Filter title bouts only
+    winners = winners[winners['title_bout'] == True]
+    
+    # Copy relevant columns
     result = winners[relevant_columns].copy()
     
-    # Add the winner's name
-    result['winner_name'] = winners.apply(lambda row: row['r_fighter'] if row['winner'] == 'Red' else row['b_fighter'], axis=1)
+    # Debugging: Print result DataFrame before returning
+    print("Result DataFrame:")
+    print(result.head())
     
     return result
 
@@ -33,6 +42,10 @@ def lambda_handler(event, context):
         
         # Filter winners and include only relevant columns
         winner_df = filter_ufc_winners(df)
+        
+        # Debugging: Print winner_df to confirm country column exists
+        print("Winner DataFrame with 'country' column:")
+        print(winner_df.head())
         
         if winner_df.empty:
             return {
