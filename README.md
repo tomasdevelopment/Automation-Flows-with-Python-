@@ -1,4 +1,4 @@
-Find some work I´ve done playing around with Python and Power automate along with some sql and simple/unstructured storage data bases. 
+Find some work I´ve done playing around with Python, Power automate along with some aws solution with a bit of sql and simple/unstructured storage data bases. 
 
 Find some videoos of my projects here https://www.youtube.com/watch?v=O1EPnNWUNtw
 
