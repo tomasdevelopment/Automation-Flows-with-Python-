@@ -1,0 +1,361 @@
+referee,date,location,winner,title_bout,weight_class
+Mark Smith,3/6/2021,"Las Vegas, Nevada, USA",Blue,True,Bantamweight
+Herb Dean,3/6/2021,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Jason Herzog,3/6/2021,"Las Vegas, Nevada, USA",Red,True,WomenFeatherweight
+Herb Dean,2/13/2021,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Herb Dean,11/21/2020,"Las Vegas, Nevada, USA",Red,True,WomenFlyweight
+Marc Goddard,11/21/2020,"Las Vegas, Nevada, USA",Red,True,Flyweight
+Jason Herzog,10/24/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Lightweight
+Jason Herzog,9/26/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Middleweight
+Kevin Sataki,9/26/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Blue,True,LightHeavyweight
+Marc Goddard,8/15/2020,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Marc Goddard,7/18/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Flyweight
+Leon Roberts,7/11/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Bantamweight
+Herb Dean,7/11/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Featherweight
+Marc Goddard,7/11/2020,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Welterweight
+Herb Dean,6/6/2020,"Las Vegas, Nevada, USA",Red,True,WomenFeatherweight
+Herb Dean,5/9/2020,"Jacksonville, Florida, USA",Blue,True,Lightweight
+Keith Peterson,5/9/2020,"Jacksonville, Florida, USA",Red,True,Bantamweight
+Dan Miragliotta,3/7/2020,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Keith Peterson,3/7/2020,"Las Vegas, Nevada, USA",Red,True,WomenStrawweight
+Jacob Montalvo,2/8/2020,"Houston, Texas, USA",Red,True,WomenFlyweight
+Dan Miragliotta,2/8/2020,"Houston, Texas, USA",Red,True,LightHeavyweight
+Keith Peterson,12/14/2019,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+Jason Herzog,12/14/2019,"Las Vegas, Nevada, USA",Blue,True,Featherweight
+Marc Goddard,12/14/2019,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Marc Goddard,10/5/2019,"Melbourne, Victoria, Australia",Blue,True,Middleweight
+Marc Goddard,9/7/2019,"Abu Dhabi, Abu Dhabi, United Arab Emirates",Red,True,Lightweight
+Leon Roberts,8/31/2019,"Shenzhen, Guangdong, China",Blue,True,WomenStrawweight
+Herb Dean,8/17/2019,"Anaheim, California, USA",Blue,True,Heavyweight
+Keith Peterson,8/10/2019,"Montevideo, Uruguay",Red,True,WomenFlyweight
+Herb Dean,7/27/2019,"Edmonton, Alberta, Canada",Red,True,Featherweight
+Marc Goddard,7/6/2019,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+Herb Dean,7/6/2019,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Robert Madrigal,6/8/2019,"Chicago, Illinois, USA",Red,True,WomenFlyweight
+Marc Goddard,6/8/2019,"Chicago, Illinois, USA",Red,True,Bantamweight
+Marc Goddard,5/11/2019,"Rio de Janeiro, Rio de Janeiro, Brazil",Blue,True,WomenStrawweight
+Blake Grice,4/13/2019,"Atlanta, Georgia, USA",Blue,True,Lightweight
+Marc Goddard,4/13/2019,"Atlanta, Georgia, USA",Blue,True,Middleweight
+Herb Dean,3/2/2019,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Marc Goddard,3/2/2019,"Las Vegas, Nevada, USA",Blue,True,Welterweight
+Kevin MacDonald,1/19/2019,"Brooklyn, New York, USA",Red,True,Flyweight
+Mike Beltran,12/29/2018,"Los Angeles, California, USA",Red,True,LightHeavyweight
+Marc Goddard,12/29/2018,"Los Angeles, California, USA",Blue,True,WomenFeatherweight
+Todd Ronald Anderson,12/8/2018,"Toronto, Ontario, Canada",Red,True,WomenFlyweight
+Yves Lavigne,12/8/2018,"Toronto, Ontario, Canada",Red,True,Featherweight
+Mark Smith,11/30/2018,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Yves Lavigne,11/30/2018,"Las Vegas, Nevada, USA",Blue,True,WomenFeatherweight
+Herb Dean,11/3/2018,"New York City, New York, USA",Red,True,Heavyweight
+Herb Dean,10/6/2018,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Dan Miragliotta,9/8/2018,"Dallas, Texas, USA",Red,True,Welterweight
+Herb Dean,8/4/2018,"Los Angeles, California, USA",Red,True,Bantamweight
+Mike Beltran,8/4/2018,"Los Angeles, California, USA",Blue,True,Flyweight
+Marc Goddard,7/7/2018,"Las Vegas, Nevada, USA",Blue,True,Heavyweight
+Herb Dean,7/6/2018,"Las Vegas, Nevada, USA",Blue,True,Featherweight
+Marc Goddard,7/6/2018,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Herb Dean,6/9/2018,"Chicago, Illinois, USA",Blue,True,Welterweight
+Marc Goddard,5/12/2018,"Rio de Janeiro, Rio de Janeiro, Brazil",Red,True,WomenBantamweight
+Keith Peterson,4/7/2018,"Brooklyn, New York, USA",Red,True,WomenStrawweight
+Dan Miragliotta,4/7/2018,"Brooklyn, New York, USA",Red,True,Lightweight
+Herb Dean,3/3/2018,"Las Vegas, Nevada, USA",Red,True,WomenFeatherweight
+Marc Goddard,2/10/2018,"Perth, Western Australia, Australia",Red,True,Middleweight
+Herb Dean,1/20/2018,"Boston, Massachusetts, USA",Red,True,Heavyweight
+Kevin MacDonald,1/20/2018,"Boston, Massachusetts, USA",Red,True,LightHeavyweight
+Herb Dean,12/30/2017,"Las Vegas, Nevada, USA",Red,True,WomenFeatherweight
+Herb Dean,12/2/2017,"Detroit, Michigan, USA",Red,True,Featherweight
+John McCarthy,12/1/2017,"Las Vegas, Nevada, USA",Red,True,WomenFlyweight
+John McCarthy,11/4/2017,"New York City, New York, USA",Blue,True,WomenStrawweight
+Dan Miragliotta,11/4/2017,"New York City, New York, USA",Blue,True,Bantamweight
+John McCarthy,11/4/2017,"New York City, New York, USA",Blue,True,Middleweight
+Dan Miragliotta,10/7/2017,"Las Vegas, Nevada, USA",Red,True,Flyweight
+Herb Dean,10/7/2017,"Las Vegas, Nevada, USA",Red,True,Lightweight
+John McCarthy,9/9/2017,"Edmonton, Alberta, Canada",Red,True,WomenBantamweight
+Herb Dean,7/29/2017,"Anaheim, California, USA",Red,True,Welterweight
+Mike Beltran,7/29/2017,"Anaheim, California, USA",Red,True,WomenFeatherweight
+John McCarthy,7/8/2017,"Las Vegas, Nevada, USA",Blue,True,Middleweight
+Jason Herzog,7/7/2017,"Las Vegas, Nevada, USA",Blue,True,Welterweight
+John McCarthy,6/3/2017,"Rio de Janeiro, Rio de Janeiro, Brazil",Blue,True,Featherweight
+Herb Dean,5/13/2017,"Dallas, Texas, USA",Red,True,Heavyweight
+Jacob Montalvo,5/13/2017,"Dallas, Texas, USA",Red,True,WomenStrawweight
+Dan Miragliotta,4/15/2017,"Kansas City, Missouri, USA",Red,True,Flyweight
+John McCarthy,4/8/2017,"Buffalo, New York, USA",Red,True,LightHeavyweight
+John McCarthy,3/4/2017,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Todd Ronald Anderson,2/11/2017,"Brooklyn, New York, USA",Blue,True,WomenFeatherweight
+Herb Dean,12/30/2016,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+John McCarthy,12/30/2016,"Las Vegas, Nevada, USA",Blue,True,Bantamweight
+Yves Lavigne,12/10/2016,"Toronto, Ontario, Canada",Red,True,Featherweight
+Herb Dean,12/3/2016,"Las Vegas, Nevada, USA",Red,True,Flyweight
+John McCarthy,11/12/2016,"New York City, New York, USA",Blue,True,Lightweight
+Keith Peterson,11/12/2016,"New York City, New York, USA",Red,True,WomenStrawweight
+Keith Peterson,11/5/2016,"Mexico City, Distrito Federal, Mexico",Red,True,Lightweight
+Yves Lavigne,10/8/2016,"Manchester, England, United Kingdom",Red,True,Middleweight
+Marc Goddard,9/10/2016,"Cleveland, Ohio, USA",Red,True,Heavyweight
+Dan Miragliotta,7/30/2016,"Atlanta, Georgia, USA",Blue,True,Welterweight
+Marc Goddard,7/9/2016,"Las Vegas, Nevada, USA",Red,True,Featherweight
+Herb Dean,7/9/2016,"Las Vegas, Nevada, USA",Blue,True,WomenBantamweight
+John McCarthy,7/8/2016,"Las Vegas, Nevada, USA",Red,True,WomenStrawweight
+Herb Dean,7/8/2016,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,7/8/2016,"Las Vegas, Nevada, USA",Red,True,WomenStrawweight
+Herb Dean,7/7/2016,"Las Vegas, Nevada, USA",Blue,True,Lightweight
+John McCarthy,6/4/2016,"Los Angeles, California, USA",Blue,True,Middleweight
+Herb Dean,6/4/2016,"Los Angeles, California, USA",Red,True,Bantamweight
+Dan Miragliotta,5/14/2016,"Curitiba, Parana, Brazil",Blue,True,Heavyweight
+Herb Dean,4/23/2016,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,4/23/2016,"Las Vegas, Nevada, USA",Red,True,Flyweight
+John McCarthy,3/5/2016,"Las Vegas, Nevada, USA",Blue,True,WomenBantamweight
+Herb Dean,1/17/2016,"Boston, Massachusetts, USA",Blue,True,Bantamweight
+John McCarthy,1/2/2016,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Herb Dean,12/19/2015,"Orlando, Florida, USA",Red,True,Lightweight
+John McCarthy,12/12/2015,"Las Vegas, Nevada, USA",Blue,True,Featherweight
+Herb Dean,12/12/2015,"Las Vegas, Nevada, USA",Blue,True,Middleweight
+Herb Dean,12/11/2015,"Las Vegas, Nevada, USA",Blue,True,Lightweight
+Gary Copeland,11/21/2015,"Monterrey, Nuevo Leon, Mexico",Red,True,Welterweight
+Mario Yamasaki,11/21/2015,"Monterrey, Nuevo Leon, Mexico",Blue,True,Lightweight
+Herb Dean,11/14/2015,"Melbourne, Victoria, Australia",Blue,True,WomenBantamweight
+Steve Perceval,11/14/2015,"Melbourne, Victoria, Australia",Red,True,WomenStrawweight
+Herb Dean,10/3/2015,"Houston, Texas, USA",Red,True,LightHeavyweight
+Herb Dean,9/5/2015,"Las Vegas, Nevada, USA",Red,True,Flyweight
+John McCarthy,8/1/2015,"Rio de Janeiro, Rio de Janeiro, Brazil",Red,True,WomenBantamweight
+Herb Dean,8/1/2015,"Rio de Janeiro, Rio de Janeiro, Brazil",Red,True,Lightweight
+Osiris Maia,8/1/2015,"Rio de Janeiro, Rio de Janeiro, Brazil",Red,True,Bantamweight
+Herb Dean,7/25/2015,"Chicago, Illinois, USA",Red,True,Bantamweight
+Herb Dean,7/12/2015,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Herb Dean,7/11/2015,"Las Vegas, Nevada, USA",Blue,True,Featherweight
+John McCarthy,7/11/2015,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Marc Goddard,6/20/2015,"Berlin, Berlin, Germany",Red,True,WomenStrawweight
+Herb Dean,6/13/2015,"Mexico City, Distrito Federal, Mexico",Blue,True,Heavyweight
+Herb Dean,5/23/2015,"Las Vegas, Nevada, USA",Red,True,Middleweight
+John McCarthy,5/23/2015,"Las Vegas, Nevada, USA",Blue,True,LightHeavyweight
+Yves Lavigne,4/25/2015,"Montreal, Quebec, Canada",Red,True,Flyweight
+Don Turnage,3/14/2015,"Dallas, Texas, USA",Blue,True,WomenStrawweight
+Dan Miragliotta,3/14/2015,"Dallas, Texas, USA",Blue,True,Lightweight
+John McCarthy,2/28/2015,"Los Angeles, California, USA",Red,True,WomenBantamweight
+Herb Dean,1/3/2015,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Yves Lavigne,12/12/2014,"Las Vegas, Nevada, USA",Red,True,WomenStrawweight
+John McCarthy,12/6/2014,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Herb Dean,12/6/2014,"Las Vegas, Nevada, USA",Blue,True,Welterweight
+Herb Dean,11/15/2014,"Mexico City, Distrito Federal, Mexico",Red,True,Heavyweight
+John McCarthy,11/15/2014,"Mexico City, Distrito Federal, Mexico",Red,True,Bantamweight
+Mario Yamasaki,11/15/2014,"Mexico City, Distrito Federal, Mexico",Red,True,Featherweight
+Marc Goddard,10/25/2014,"Rio de Janeiro, Brazil",Red,True,Featherweight
+Herb Dean,9/27/2014,"Las Vegas, Nevada, USA",Red,True,Flyweight
+John McCarthy,8/30/2014,"Sacramento, California, USA",Red,True,Bantamweight
+Steve Perceval,8/23/2014,"Macau, China",Red,True,Featherweight
+Yves Lavigne,7/6/2014,"Las Vegas, Nevada, USA",Blue,True,Middleweight
+Mario Yamasaki,7/6/2014,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Herb Dean,7/5/2014,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Yves Lavigne,7/5/2014,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+Jerin Valel,6/14/2014,"Vancouver, British Columbia, Canada",Red,True,Flyweight
+Mario Yamasaki,5/31/2014,"Sao Paulo, Brazil",Blue,True,Middleweight
+Herb Dean,5/31/2014,"Sao Paulo, Brazil",Blue,True,Heavyweight
+Herb Dean,5/24/2014,"Las Vegas, Nevada, USA",Blue,True,Bantamweight
+Dan Miragliotta,4/26/2014,"Baltimore, Maryland, USA",Red,True,LightHeavyweight
+Yves Lavigne,4/16/2014,"Quebec City, Quebec, Canada",Red,True,Welterweight
+Philippe Chartier,4/16/2014,"Quebec City, Quebec, Canada",Blue,True,Middleweight
+Dan Miragliotta,3/15/2014,"Dallas, Texas, USA",Red,True,Welterweight
+Jerin Valel,3/1/2014,"Macau, China",Blue,True,Welterweight
+Herb Dean,2/22/2014,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+Herb Dean,2/1/2014,"Newark, New Jersey, USA",Red,True,Bantamweight
+Keith Peterson,2/1/2014,"Newark, New Jersey, USA",Red,True,Featherweight
+Herb Dean,12/28/2013,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Mario Yamasaki,12/28/2013,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+John McCarthy,12/14/2013,"Sacramento, California, USA",Red,True,Flyweight
+Mario Yamasaki,11/30/2013,"Las Vegas, Nevada, USA",Red,True,WomenBantamweight
+Yves Lavigne,11/30/2013,"Las Vegas, Nevada, USA",Red,True,Bantamweight
+Mario Yamasaki,11/16/2013,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Herb Dean,10/19/2013,"Houston, Texas, USA",Red,True,Heavyweight
+John McCarthy,9/21/2013,"Toronto, Ontario, Canada",Red,True,LightHeavyweight
+Yves Lavigne,9/21/2013,"Toronto, Ontario, Canada",Red,True,Bantamweight
+Herb Dean,8/31/2013,"Milwaukee, Wisconsin, USA",Blue,True,Lightweight
+Herb Dean,8/3/2013,"Rio de Janeiro, Brazil",Red,True,Featherweight
+Herb Dean,7/27/2013,"Seattle, Washington, USA",Red,True,Flyweight
+Herb Dean,7/6/2013,"Las Vegas, Nevada, USA",Blue,True,Middleweight
+Marc Goddard,6/8/2013,"Fortaleza, Ceara, Brazil",Blue,True,Welterweight
+Mario Yamasaki,5/25/2013,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Keith Peterson,4/27/2013,"Newark, New Jersey, USA",Red,True,LightHeavyweight
+John McCarthy,4/20/2013,"San Jose, California, USA",Red,True,Lightweight
+Herb Dean,4/13/2013,"Las Vegas, Nevada, USA",Blue,True,Middleweight
+Yves Lavigne,3/16/2013,"Montreal, Quebec, Canada",Red,True,Welterweight
+John McCarthy,2/23/2013,"Anaheim, California, USA",Red,True,WomenBantamweight
+Marc Goddard,2/16/2013,"London, England, United Kingdom",Red,True,Bantamweight
+Steve Mazzagatti,2/2/2013,"Las Vegas, Nevada, USA",Red,True,Featherweight
+John McCarthy,1/26/2013,"Chicago, Illinois, USA",Red,True,Flyweight
+Herb Dean,12/29/2012,"Las Vegas, Nevada, USA",Blue,True,Heavyweight
+Steve Mazzagatti,12/15/2012,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John Sharp,12/14/2012,"Gold Coast, Queensland, Australia",Blue,True,Lightweight
+Steve Perceval,12/14/2012,"Gold Coast, Queensland, Australia",Red,True,Welterweight
+Herb Dean,12/8/2012,"Seattle, Washington, USA",Red,True,Lightweight
+Yves Lavigne,11/17/2012,"Montreal, Quebec, Canada",Red,True,Welterweight
+John McCarthy,9/22/2012,"Toronto, Ontario, Canada",Red,True,LightHeavyweight
+Yves Lavigne,9/22/2012,"Toronto, Ontario, Canada",Blue,True,Flyweight
+Herb Dean,8/11/2012,"Denver, Colorado, USA",Red,True,Lightweight
+Mario Yamasaki,7/21/2012,"Calgary, Alberta, Canada",Blue,True,Bantamweight
+Yves Lavigne,7/7/2012,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Herb Dean,6/23/2012,"Belo Horizonte, Minas Gerais, Brazil",Red,True,Middleweight
+Marc Goddard,6/23/2012,"Belo Horizonte, Minas Gerais, Brazil",Blue,True,Featherweight
+Herb Dean,6/1/2012,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Herb Dean,5/26/2012,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Herb Dean,4/21/2012,"Atlanta, Georgia, USA",Red,True,LightHeavyweight
+Marc Goddard,2/25/2012,"Saitama, Japan",Blue,True,Lightweight
+Steve Mazzagatti,2/4/2012,"Las Vegas, Nevada, USA",Blue,True,Welterweight
+Mario Yamasaki,1/14/2012,"Rio de Janeiro, Brazil",Red,True,Featherweight
+John McCarthy,12/10/2011,"Toronto, Ontario, Canada",Red,True,LightHeavyweight
+Josh Rosenthal,12/3/2011,"Las Vegas, Nevada, USA",Red,True,Featherweight
+Herb Dean,12/3/2011,"Las Vegas, Nevada, USA",Blue,True,Bantamweight
+John McCarthy,11/12/2011,"Anaheim, California, USA",Blue,True,Heavyweight
+Josh Rosenthal,10/8/2011,"Houston, Texas, USA",Red,True,Lightweight
+Dan Miragliotta,10/8/2011,"Houston, Texas, USA",Red,True,Featherweight
+Kevin Mulhall,10/1/2011,"Washington, DC, USA",Red,True,Bantamweight
+Josh Rosenthal,9/24/2011,"Denver, Colorado, USA",Red,True,LightHeavyweight
+Herb Dean,8/27/2011,"Rio de Janeiro, Brazil",Red,True,Middleweight
+Steve Mazzagatti,7/2/2011,"Las Vegas, Nevada, USA",Red,True,Bantamweight
+Josh Rosenthal,6/4/2011,"Las Vegas, Nevada, USA",Blue,True,Welterweight
+Herb Dean,4/30/2011,"Toronto, Ontario, Canada",Red,True,Welterweight
+John McCarthy,4/30/2011,"Toronto, Ontario, Canada",Red,True,Featherweight
+Herb Dean,3/19/2011,"Newark, New Jersey, USA",Blue,True,LightHeavyweight
+Mario Yamasaki,2/5/2011,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Herb Dean,12/11/2010,"Montreal, Quebec, Canada",Red,True,Welterweight
+Herb Dean,12/4/2010,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Herb Dean,10/23/2010,"Anaheim, California, USA",Blue,True,Heavyweight
+Herb Dean,8/28/2010,"Boston, Massachusetts, USA",Red,True,Lightweight
+Josh Rosenthal,8/7/2010,"Oakland, California, USA",Red,True,Middleweight
+Josh Rosenthal,7/3/2010,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Steve Mazzagatti,6/19/2010,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Yves Lavigne,5/8/2010,"Montreal, Quebec, Canada",Blue,True,LightHeavyweight
+Herb Dean,4/10/2010,"Abu Dhabi, United Arab Emirates",Blue,True,Lightweight
+Dan Miragliotta,4/10/2010,"Abu Dhabi, United Arab Emirates",Red,True,Middleweight
+Kevin Mulhall,3/27/2010,"Newark, New Jersey, USA",Red,True,Welterweight
+Dan Miragliotta,3/27/2010,"Newark, New Jersey, USA",Blue,True,Heavyweight
+Herb Dean,12/12/2009,"Memphis, Tennessee, USA",Red,True,Lightweight
+Herb Dean,12/5/2009,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Herb Dean,10/24/2009,"Los Angeles, California, USA",Red,True,LightHeavyweight
+Dan Miragliotta,8/8/2009,"Philadelphia, Pennsylvania, USA",Red,True,Lightweight
+Herb Dean,7/11/2009,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Steve Mazzagatti,7/11/2009,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Herb Dean,6/20/2009,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Steve Mazzagatti,6/20/2009,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Mario Yamasaki,5/23/2009,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Yves Lavigne,4/18/2009,"Montreal, Quebec, Canada",Red,True,Middleweight
+Herb Dean,1/31/2009,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Steve Mazzagatti,12/27/2008,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Herb Dean,12/27/2008,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Steve Mazzagatti,12/13/2008,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Herb Dean,12/13/2008,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Mario Yamasaki,11/15/2008,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Herb Dean,10/25/2008,"Rosemont, Illinois, USA",Red,True,Middleweight
+Yves Lavigne,8/9/2008,"Minneapolis, Minnesota, USA",Red,True,Welterweight
+Yves Lavigne,7/5/2008,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Herb Dean,6/21/2008,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Mario Yamasaki,5/24/2008,"Las Vegas, Nevada, USA",Red,True,Lightweight
+Yves Lavigne,4/19/2008,"Montreal, Quebec, Canada",Red,True,Welterweight
+Herb Dean,3/1/2008,"Columbus, Ohio, USA",Red,True,Middleweight
+Herb Dean,2/2/2008,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+Herb Dean,1/19/2008,"Newcastle, England, United Kingdom",Red,True,Lightweight
+Steve Mazzagatti,12/29/2007,"Las Vegas, Nevada, USA",Red,True,Welterweight
+Yves Lavigne,12/8/2007,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,10/20/2007,"Cincinnati, Ohio, USA",Red,True,Middleweight
+John McCarthy,9/8/2007,"London, England, United Kingdom",Red,True,LightHeavyweight
+Herb Dean,8/25/2007,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,7/7/2007,"Sacramento, California, USA",Red,True,Middleweight
+John McCarthy,7/7/2007,"Sacramento, California, USA",Red,True,Lightweight
+Herb Dean,6/23/2007,"Las Vegas, Nevada, USA",Red,True,Lightweight
+John McCarthy,5/26/2007,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,4/7/2007,"Houston, Texas, USA",Red,True,Welterweight
+John McCarthy,3/3/2007,"Columbus, Ohio, USA",Red,True,Heavyweight
+Mario Yamasaki,12/30/2006,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,11/18/2006,"Sacramento, California, USA",Red,True,Welterweight
+John McCarthy,11/18/2006,"Sacramento, California, USA",Red,True,Heavyweight
+John McCarthy,11/11/2006,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Herb Dean,11/11/2006,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,10/14/2006,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Steve Mazzagatti,10/14/2006,"Las Vegas, Nevada, USA",Red,True,Lightweight
+John McCarthy,9/23/2006,"Anaheim, California, USA",Red,True,Welterweight
+John McCarthy,8/26/2006,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,7/8/2006,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,6/24/2006,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Steve Mazzagatti,6/24/2006,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Herb Dean,4/15/2006,"Anaheim, California, USA",Red,True,Heavyweight
+John McCarthy,3/4/2006,"Las Vegas, Nevada, USA",Red,True,Middleweight
+John McCarthy,2/4/2006,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,11/19/2005,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Herb Dean,11/5/2005,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,11/5/2005,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,10/7/2005,"Uncasville, Connecticut, USA",Red,True,Heavyweight
+John McCarthy,8/20/2005,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Herb Dean,6/4/2005,"Atlantic City, New Jersey, USA",Red,True,Middleweight
+John McCarthy,6/4/2005,"Atlantic City, New Jersey, USA",Red,True,Heavyweight
+Mario Yamasaki,4/16/2005,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,4/16/2005,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Herb Dean,4/9/2005,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Steve Mazzagatti,4/9/2005,"Las Vegas, Nevada, USA",Red,True,Middleweight
+Herb Dean,2/5/2005,"Las Vegas, Nevada, USA",Red,True,Middleweight
+John McCarthy,2/5/2005,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,10/22/2004,"Atlantic City, New Jersey, USA",Red,True,Welterweight
+John McCarthy,8/21/2004,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Herb Dean,6/19/2004,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,1/31/2004,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Mario Yamasaki,1/31/2004,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,11/21/2003,"Uncasville, Connecticut, USA",Red,True,Welterweight
+John McCarthy,9/26/2003,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,9/26/2003,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,6/6/2003,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,4/25/2003,"Miami, Florida, USA",Red,True,Welterweight
+John McCarthy,2/28/2003,"Atlantic City, New Jersey, USA",Red,True,Heavyweight
+John McCarthy,11/22/2002,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,11/22/2002,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+John McCarthy,9/27/2002,"Uncasville, Connecticut, USA",Red,True,Heavyweight
+John McCarthy,7/13/2002,"London, England, United Kingdom",Red,True,Welterweight
+John McCarthy,5/10/2002,"Bossier City, Louisiana, USA",Red,True,Middleweight
+John McCarthy,3/22/2002,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,3/22/2002,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,1/11/2002,"Uncasville, Connecticut, USA",Red,True,Middleweight
+John McCarthy,1/11/2002,"Uncasville, Connecticut, USA",Red,True,Lightweight
+John McCarthy,11/2/2001,"Las Vegas, Nevada, USA",Red,True,Welterweight
+John McCarthy,11/2/2001,"Las Vegas, Nevada, USA",Red,True,Heavyweight
+John McCarthy,9/28/2001,"Las Vegas, Nevada, USA",Red,True,Middleweight
+John McCarthy,9/28/2001,"Las Vegas, Nevada, USA",Red,True,LightHeavyweight
+Mario Yamasaki,9/28/2001,"Las Vegas, Nevada, USA",Red,True,Lightweight
+John McCarthy,6/29/2001,"East Rutherford, New Jersey, USA",Red,True,LightHeavyweight
+John McCarthy,5/4/2001,"Atlantic City, New Jersey, USA",Red,True,Welterweight
+John McCarthy,5/4/2001,"Atlantic City, New Jersey, USA",Red,True,Heavyweight
+John McCarthy,2/23/2001,"Atlantic City, New Jersey, USA",Red,True,LightHeavyweight
+John McCarthy,2/23/2001,"Atlantic City, New Jersey, USA",Red,True,Lightweight
+John McCarthy,12/16/2000,"Tokyo, Japan",Red,True,LightHeavyweight
+John McCarthy,12/16/2000,"Tokyo, Japan",Red,True,Welterweight
+John McCarthy,11/17/2000,"Atlantic City, New Jersey, USA",Red,True,Heavyweight
+John McCarthy,6/9/2000,"Cedar Rapids, Iowa, USA",Red,True,Welterweight
+John McCarthy,6/9/2000,"Cedar Rapids, Iowa, USA",Red,True,Heavyweight
+John McCarthy,4/14/2000,"Tokyo, Japan",Red,True,LightHeavyweight
+John McCarthy,11/19/1999,"Chiba, Japan",Red,True,Heavyweight
+John McCarthy,11/19/1999,"Chiba, Japan",Red,True,Heavyweight
+John McCarthy,9/24/1999,"Lake Charles, Louisiana, USA",Red,True,LightHeavyweight
+John McCarthy,7/16/1999,"Cedar Rapids, Iowa, USA",Red,True,Welterweight
+John McCarthy,5/7/1999,"Birmingham, Alabama, USA",Red,True,Heavyweight
+John McCarthy,1/8/1999,"New Orleans, Louisiana, USA",Red,True,Welterweight
+John McCarthy,10/16/1998,"Sao Paulo, Brazil",Red,True,Welterweight
+John McCarthy,10/16/1998,"Sao Paulo, Brazil",Red,True,LightHeavyweight
+John McCarthy,5/15/1998,"Mobile, Alabama, USA",Red,True,LightHeavyweight
+John McCarthy,5/15/1998,"Mobile, Alabama, USA",Red,True,Middleweight
+John McCarthy,3/13/1998,"New Orleans, Louisiana, USA",Red,True,Lightweight
+John McCarthy,3/13/1998,"New Orleans, Louisiana, USA",Red,True,LightHeavyweight
+John McCarthy,12/21/1997,"Yokohama, Kanagawa, Japan",Red,True,LightHeavyweight
+John McCarthy,12/21/1997,"Yokohama, Kanagawa, Japan",Red,True,Heavyweight
+John McCarthy,12/21/1997,"Yokohama, Kanagawa, Japan",Red,True,Heavyweight
+John McCarthy,10/17/1997,"Bay St. Louis, Mississippi, USA",Red,True,Heavyweight
+John McCarthy,10/17/1997,"Bay St. Louis, Mississippi, USA",Red,True,Heavyweight
+John McCarthy,7/27/1997,"Birmingham, Alabama, USA",Red,True,Heavyweight
+John McCarthy,7/27/1997,"Birmingham, Alabama, USA",Red,True,Heavyweight
+John McCarthy,7/27/1997,"Birmingham, Alabama, USA",Red,True,Middleweight
+John McCarthy,5/30/1997,"Augusta, Georgia, USA",Red,True,Lightweight
+John McCarthy,5/30/1997,"Augusta, Georgia, USA",Red,True,Heavyweight
+John McCarthy,2/7/1997,"Dothan, Alabama, USA",Red,True,Heavyweight
+John McCarthy,12/7/1996,"Birmingham, Alabama, USA",Red,True,CatchWeight
+John McCarthy,7/12/1996,"Birmingham, Alabama, USA",Red,True,CatchWeight
+John McCarthy,2/16/1996,"San Juan, Puerto Rico",Red,True,CatchWeight
+John McCarthy,12/16/1995,"Denver, Colorado, USA",Red,True,CatchWeight
+John McCarthy,9/8/1995,"Buffalo, New York, USA",Red,True,CatchWeight
+John McCarthy,7/14/1995,"Casper, Wyoming, USA",Red,True,CatchWeight
+John McCarthy,4/7/1995,"Charlotte, North Carolina, USA",Red,True,CatchWeight
+John McCarthy,12/16/1994,"Tulsa, Oklahoma, USA",Red,True,CatchWeight
+John McCarthy,9/9/1994,"Charlotte, North Carolina, USA",Red,True,CatchWeight
+John McCarthy,3/11/1994,"Denver, Colorado, USA",Red,True,CatchWeight
