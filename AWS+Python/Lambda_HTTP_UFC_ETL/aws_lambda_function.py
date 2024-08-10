@@ -1,7 +1,6 @@
 import json
 import pandas as pd
 
-
 def filter_ufc_winners(df):
     # Create a copy of the DataFrame to avoid modifying the original
     df = df.copy()
@@ -22,9 +21,6 @@ def filter_ufc_winners(df):
     # Add the winner's name
     result['winner_name'] = winners.apply(lambda row: row['r_fighter'] if row['winner'] == 'Red' else row['b_fighter'], axis=1)
     
-    # Uncomment the following line if you want to filter for title bouts only
-    result = result[result['title_bout'] == True]
-    
     return result
 
 def lambda_handler(event, context):
@@ -37,6 +33,18 @@ def lambda_handler(event, context):
         
         # Filter winners and include only relevant columns
         winner_df = filter_ufc_winners(df)
+        
+        if winner_df.empty:
+            return {
+                'statusCode': 200,
+                'body': json.dumps({'message': 'No winners found in the provided data.'}),
+                'headers': {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                    'Access-Control-Allow-Methods': 'OPTIONS, POST, GET'
+                }
+            }
         
         # Convert DataFrame to a dictionary
         result_dict = winner_df.to_dict(orient='records')
@@ -51,10 +59,32 @@ def lambda_handler(event, context):
                 'Access-Control-Allow-Methods': 'OPTIONS, POST, GET'
             }
         }
+    except json.JSONDecodeError as e:
+        return {
+            'statusCode': 400,
+            'body': json.dumps({'error': 'Invalid JSON in request body'}),
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                'Access-Control-Allow-Methods': 'OPTIONS, POST, GET'
+            }
+        }
+    except KeyError as e:
+        return {
+            'statusCode': 400,
+            'body': json.dumps({'error': f'Missing required field: {str(e)}'}),
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                'Access-Control-Allow-Methods': 'OPTIONS, POST, GET'
+            }
+        }
     except Exception as e:
         return {
             'statusCode': 500,
-            'body': json.dumps({'error': str(e)}),
+            'body': json.dumps({'error': f'An unexpected error occurred: {str(e)}'}),
             'headers': {
                 'Content-Type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
