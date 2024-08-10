@@ -1,0 +1,12 @@
+requests
+pandas
+streamlit
+json
+plost
+openai
+dotenv
+load_dotenv
+os
+hydralit_components
+streamlit_echarts
+pyecharts
