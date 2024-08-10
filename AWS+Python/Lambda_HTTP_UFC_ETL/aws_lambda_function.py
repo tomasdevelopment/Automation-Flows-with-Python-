@@ -17,6 +17,7 @@ def filter_ufc_winners(df):
     
     # Create DataFrame with winners and the relevant columns
     result = winners[['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class']]
+    result = result[result['title_bout'] ==True] # only title bout winners
     
     return result
 
