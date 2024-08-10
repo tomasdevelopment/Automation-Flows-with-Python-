@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 
+
 def filter_ufc_winners(df):
     # Create a copy of the DataFrame to avoid modifying the original
     df = df.copy()
@@ -9,15 +10,20 @@ def filter_ufc_winners(df):
     df.columns = df.columns.str.lower()
     
     # Get only the winners
-    winners = df[((df['winner'] == 'Red') & (df['r_fighter'] == df['r_fighter'])) | 
+    winners = df[((df['winner'] == 'Red') & (df['r_fighter'] == df['r_fighter'])) |
                  ((df['winner'] == 'Blue') & (df['b_fighter'] == df['b_fighter']))]
     
     # Create a list of relevant columns to include
     relevant_columns = ['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class']
     
     # Create DataFrame with winners and the relevant columns
-    result = winners[['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class']]
-    result = result[result['title_bout'] ==True] # only title bout winners
+    result = winners[relevant_columns].copy()
+    
+    # Add the winner's name
+    result['winner_name'] = winners.apply(lambda row: row['r_fighter'] if row['winner'] == 'Red' else row['b_fighter'], axis=1)
+    
+    # Uncomment the following line if you want to filter for title bouts only
+    result = result[result['title_bout'] == True]
     
     return result
 
