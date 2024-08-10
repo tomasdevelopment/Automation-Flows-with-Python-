@@ -8,8 +8,6 @@ Use Python to integrate with Redshift and create a table.
 
 Use SQL Sentences to filter only what you need from your table
 
-![image](https://github.com/user-attachments/assets/252ce778-53bb-4ed8-bd0e-a49b088ea308)
-
 
 
 ![image](https://github.com/user-attachments/assets/30e9eef8-a7ca-4322-a595-598765758e88)
