@@ -1,5 +1,8 @@
-![image](https://github.com/user-attachments/assets/639d4879-2ec9-407b-81b1-dba0d90ef1a8)
 
+
+Image Schema 
+
+![image](https://github.com/user-attachments/assets/b0edcce3-1b3b-4c2b-bc64-f2212a3efaf4)
 
 Step 0: Set Up Your Data Storage and Database
 Data Storage Setup:
@@ -26,10 +29,6 @@ This step focuses on setting up data storage, preparing data, and integrating wi
 Step 1: Set Up and Configure AWS Lambda
 
 
-
-Image Schema 
-
-![image](https://github.com/user-attachments/assets/b0edcce3-1b3b-4c2b-bc64-f2212a3efaf4)
 
 
 1. Log in to AWS Management Console
@@ -92,3 +91,8 @@ Make sure to configure your api gateway in a way that matches your request, here
 
 
 6. Make the http request from your jupyter notebook or ide, make sure to allign your method and payload to what you configured on your api. gateway
+-Load your transformed data  with the request and add visualizations
+
+
+ ![image](https://github.com/user-attachments/assets/639d4879-2ec9-407b-81b1-dba0d90ef1a8)
+
