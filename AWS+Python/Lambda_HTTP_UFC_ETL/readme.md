@@ -39,7 +39,7 @@ Click on layers on your function overview or scroll down in your function view u
 Specify Layer, QWS Layer, Pandas-Python312
 ![image](https://github.com/user-attachments/assets/9e4e3a90-c134-47f4-85c3-3f2a8c02e764)
 
-3. Configure Lambda Function
+3. Configure Lambda Function 
 
 You can upload your Lambda function code directly in the AWS Management Console or use the AWS CLI for deployment.
 
@@ -58,3 +58,10 @@ Memory: Adjust the memory allocated to the function (e.g., 128 MB or more if nec
 Configure Environment Variables (if needed):
 
 Set up environment variables to store configuration details, such as API keys.
+
+4. Configure Api Gateway:
+Make sure to configure your api gateway in a way that matches your request, here's where you'll add roles and APi keys if needed. 
+ ![image](https://github.com/user-attachments/assets/00648043-75b6-4060-bf93-e9c5e1c19cb0)
+
+
+6. Make the http request from your jupyter notebook or ide, make sure to allign your method and payload to what you configured on your api. gateway
