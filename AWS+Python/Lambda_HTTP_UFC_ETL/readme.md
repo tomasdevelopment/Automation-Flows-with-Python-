@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/8958820e-89ec-4cd1-9ab6-d528f82ea5d8)
-
+![image](https://github.com/user-attachments/assets/639d4879-2ec9-407b-81b1-dba0d90ef1a8)
 
 
 Step 0: Set Up Your Data Storage and Database
