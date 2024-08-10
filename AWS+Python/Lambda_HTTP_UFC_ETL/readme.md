@@ -1,12 +1,20 @@
-Step 0: Set Up Your Data Storage
-Set Up Your Database:
+Step 0: Set Up Your Data Storage and Database
+Data Storage Setup:
 
-Ensure you have a database to handle your requests. In this case, we use Amazon Redshift.
-Create a Table:
+S3 Bucket and Folder: Specifies the S3 bucket ('s3collection') and folder path ('/datasets/amazon-s3/s3ufcdata') where CSV files are stored. 
+Database Setup:
 
-Use Python to integrate with Redshift and create a table. 
+Redshift Configuration: Configures connection details for Amazon Redshift using environment variables for host, database, username, password, and port.
+Data Reading and Preparation:
 
-Use SQL Sentences to filter only what you need from your table
+Read Data: Reads CSV files from S3 and loads them into a Pandas DataFrame.
+Data Preparation: Converts column data types and formats datetime columns to ensure consistency.
+Redshift Integration:
+
+Check Table Existence: Checks if a table exists in Redshift.
+Create Table: Creates a new table in Redshift based on the DataFrame structure if it does not exist.
+Replace Data: Truncates the existing table and inserts new data into Redshift in batches, ensuring that the table has the latest data.
+This step focuses on setting up data storage, preparing data, and integrating with Amazon Redshift to manage and store the data efficiently.
 
 
 
