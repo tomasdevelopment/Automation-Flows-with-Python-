@@ -80,7 +80,6 @@ def process_and_visualize_data(winners_data):
         'Puerto Rico': 'PRI'
     }
 
-    
     # Extract country from location and add ISO alpha-3 country codes
     winners_data['country'] = winners_data['location'].apply(lambda x: x.split(', ')[-1] if ', ' in x else x)
     winners_data['iso_alpha'] = winners_data['country'].map(country_code_map)
@@ -92,14 +91,14 @@ def process_and_visualize_data(winners_data):
     
     # Aggregate data by ISO country code
     aggregation = winners_data.groupby('iso_alpha').agg(
-        winner_count=('winner', 'count')
+        title_bout_fights_won=('winner', 'count')
     ).reset_index()
     
     # Merge aggregated data back into the original DataFrame
     winners_data = winners_data.merge(aggregation, on='iso_alpha', how='left')
     
-    # Handle NaN values in 'winner_count' column
-    winners_data['winner_count'].fillna(0, inplace=True)
+    # Handle NaN values in 'title_bout_fights_won' column
+    winners_data['title_bout_fights_won'].fillna(0, inplace=True)
     
     # Define a more gradual color scale
     color_scale = [
@@ -121,11 +120,14 @@ def process_and_visualize_data(winners_data):
         )
     )
     
+    max_count = winners_data['title_bout_fights_won'].max()
+    min_count = winners_data['title_bout_fights_won'].min()
+
     # Create choropleth map
     fig_choropleth = px.choropleth(
         winners_data,
         locations='iso_alpha',
-        color='winner_count',
+        color='title_bout_fights_won',
         color_continuous_scale=color_scale,
         projection='natural earth',
         title='UFC Title Bout Winners by Country'
@@ -135,12 +137,12 @@ def process_and_visualize_data(winners_data):
     fig_scatter = px.scatter_geo(
         winners_data,
         locations='iso_alpha',
-        color='winner_count',
+        color='title_bout_fights_won',
         hover_name='country',
-        size='winner_count',
+        size='title_bout_fights_won',
         size_max=45,
         color_continuous_scale=color_scale,
-        range_color=[0, max_count],
+        range_color=[min_count, max_count],
         projection='natural earth',
         title='UFC Title Bout Winners by Country (Scatter)'
     )
@@ -150,9 +152,9 @@ def process_and_visualize_data(winners_data):
         fig.update_layout(
             dark_theme,
             coloraxis_colorbar=dict(
-                title='Winner Count',
-                tickvals=[0, winners_data['winner_count'].max()],
-                ticktext=['0', str(winners_data['winner_count'].max())],
+                title='Title Bouts Won',
+                tickvals=[min_count, max_count],
+                ticktext=[str(min_count), str(max_count)],
                 title_font=dict(color="white"),
                 tickfont=dict(color="white"),
             )
@@ -171,7 +173,7 @@ def process_and_visualize_data(winners_data):
     # Additional updates for the scatter plot
     fig_scatter.update_layout(
         title=dict(
-            text='UFC Title Bout Winners Count by Country',
+            text='UFC Title Bout Winners Count by Country (1994-2021)',
             x=0.5,
             xanchor='center',
             font=dict(
@@ -190,6 +192,7 @@ def process_and_visualize_data(winners_data):
         )
     )
     
+    # Show the figures
     fig_choropleth.show()
     fig_scatter.show()
 process_and_visualize_data(winners_data)
