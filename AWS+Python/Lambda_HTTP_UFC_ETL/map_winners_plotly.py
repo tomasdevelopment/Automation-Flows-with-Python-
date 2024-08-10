@@ -82,6 +82,22 @@ for fig in [fig_choropleth, fig_scatter]:
             ticktext=['0', f'Brazil ({brazil_count})', str(max_count)]
         )
     )
+#center title add font
+fig_scatter.update_layout(
+    title=dict(
+        text='UFC Title Bout Winners by Country (Scatter)',
+        x=0.5,
+        xanchor='center',
+        font=dict(
+            family="Arial Bold",
+            size=20,
+            color='red',
+      
+        )
+    )
+)
+
+
 
 # Show the plots
 fig_choropleth.show()
