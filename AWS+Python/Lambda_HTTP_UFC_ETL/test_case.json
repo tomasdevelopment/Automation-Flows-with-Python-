@@ -1,0 +1,6 @@
+{
+  "headers": {
+    "Authorization": "Bearer yourbearer"
+  },
+  "body": "[{\"B_age\": 30, \"R_age\": 28, \"R_fighter\": \"Fighter A\", \"B_fighter\": \"Fighter B\", \"Referee\": \"Ref Name\", \"date\": \"2023-08-10\", \"location\": \"Las Vegas, NV\", \"Winner\": \"Fighter A\", \"title_bout\": true, \"weight_class\": \"Lightweight\"}]"
+}
