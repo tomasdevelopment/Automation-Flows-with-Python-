@@ -12,11 +12,11 @@ def filter_ufc_winners(df):
     winners = df[((df['winner'] == 'Red') & (df['r_fighter'] == df['r_fighter'])) | 
                  ((df['winner'] == 'Blue') & (df['b_fighter'] == df['b_fighter']))]
     
-    # Create a list of all winners
-    all_winners = winners['r_fighter'].where(winners['winner'] == 'Red', winners['b_fighter']).unique()
+    # Create a list of relevant columns to include
+    relevant_columns = ['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class']
     
-    # Initialize the result DataFrame
-    result = pd.DataFrame({'fighter': all_winners})
+    # Create DataFrame with winners and the relevant columns
+    result = winners[['referee', 'date', 'location', 'winner', 'title_bout', 'weight_class']]
     
     return result
 
@@ -28,7 +28,7 @@ def lambda_handler(event, context):
         # Create DataFrame from the parsed body
         df = pd.DataFrame(body)
         
-        # Filter winners
+        # Filter winners and include only relevant columns
         winner_df = filter_ufc_winners(df)
         
         # Convert DataFrame to a dictionary
