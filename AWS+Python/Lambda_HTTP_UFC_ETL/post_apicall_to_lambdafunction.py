@@ -140,7 +140,7 @@ def process_and_visualize_data(winners_data):
         color='title_bout_fights_won',
         hover_name='country',
         size='title_bout_fights_won',
-        size_max=45,
+        size_max=35,
         color_continuous_scale=color_scale,
         range_color=[min_count, max_count],
         projection='natural earth',
@@ -188,7 +188,7 @@ def process_and_visualize_data(winners_data):
     fig_scatter.update_traces(
         marker=dict(
             line=dict(width=1, color='rgb(150,150,150)'),
-            sizemin=15
+            sizemin=10
         )
     )
     
