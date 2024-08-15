@@ -9,4 +9,4 @@ in
     #"Expanded Column1" = Table.ExpandRecordColumn(#"Converted to Table", "Column1", {"ufc_figther_name", "ufc_figther_stats", "ufc_figther_age", "ufc_figther_weight"})
 in
     #"Expanded Column1"
-       #"Converted to Table"
+
