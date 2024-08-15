@@ -6,5 +6,7 @@ in
     data = Source[data],
     #"Reversed List" = List.Reverse(data),
     #"Converted to Table" = Table.FromList(#"Reversed List", Splitter.SplitByNothing(), null, null, ExtraValues.Error),
+    #"Expanded Column1" = Table.ExpandRecordColumn(#"Converted to Table", "Column1", {"ufc_figther_name", "ufc_figther_stats", "ufc_figther_age", "ufc_figther_weight"})
 in
+    #"Expanded Column1"
        #"Converted to Table"
