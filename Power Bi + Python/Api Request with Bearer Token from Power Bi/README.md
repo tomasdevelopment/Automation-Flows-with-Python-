@@ -1,3 +1,5 @@
+GENERAL SCHEMA 
+
 
 ![Data Schema](https://raw.githubusercontent.com/tomasdevelopment/Automation-Flows-with-Python-/main/Power%20Bi%20%2B%20Python/Api%20Request%20with%20Bearer%20Token%20from%20Power%20Bi/data_schema_powerbidb.jpg)
 
