@@ -24,7 +24,7 @@ Check out the mission costs for the Mars rovers:
 Mars Science Lab (MLS): $2.9 billion
 Mars Exploration Project (MEP): $1.2 billion
 #DataEngineering #AWS #OpenSource #NASA #Serverless #ETL #DataTransformation #CloudComputing #Pandas #API #IAM #CloudWatch #Python #DataLake #S3
-
+Values taken from: World Economic Forum Article : https://www.weforum.org/agenda/2021/02/mars-nasa-space-exploration-cost-perseverance-viking-curiosity/
 Cron Expresion
 
 ![TriggeringWithCronexpression](https://github.com/user-attachments/assets/47ce1d12-b668-4d9e-ba24-bcedae944197)
