@@ -1,7 +1,5 @@
 
-![LambdaFunctionIamroles](https://github.com/user-attachments/assets/5e2d7f09-0562-458e-acd5-75b7dc82def8)
-
-
+![FunctionOverview](https://github.com/user-attachments/assets/d40bb25c-d6d2-4a83-920a-7e40d0a0bbae)
 
 🚀 Contributing to Open Source with NASA Rover Data! 🚀
 
