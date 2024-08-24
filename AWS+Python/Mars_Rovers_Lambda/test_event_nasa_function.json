@@ -2,7 +2,21 @@
   "test": "Fetch NASA Rover Data",
   "description": "Test event for fetching Mars rover data, creating Excel file, and uploading to S3",
   "timestamp": "2023-08-23T12:00:00Z",
-  "rovers": ["Curiosity", "Opportunity", "Spirit"],
+  "rovers": [
+    "Curiosity",
+    "Opportunity",
+    "Spirit"
+  ],
+  "Mission": [
+    "Mars Science Lab (MSL)",
+    "Mars Exploration Project (MEP)",
+    "Mars Exploration Project (MEP)"
+  ],
+  "Mission Cost": [
+    2900000000,
+    1200000000,
+    1200000000
+  ],
   "outputBucket": "educationalnasabucket",
   "outputFolder": "mars/"
 }
