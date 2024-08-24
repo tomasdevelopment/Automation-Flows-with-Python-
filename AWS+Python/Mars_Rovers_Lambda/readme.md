@@ -1,3 +1,8 @@
+
+![LambdaFunctionIamroles](https://github.com/user-attachments/assets/5e2d7f09-0562-458e-acd5-75b7dc82def8)
+
+
+
 🚀 Contributing to Open Source with NASA Rover Data! 🚀
 
 In a recent project, I leveraged the NASA Rovers open-source API to implement an ETL process. Here's a snapshot of the technical setup:
@@ -16,8 +21,27 @@ This project demonstrates how AWS serverless solutions simplify data aggregation
 effective organization and monitoring allow for efficient data handling and transformation. 🌌💡
 
 Check out the mission costs for the Mars rovers:
+![Uploading LambdaFunctionIamroles.png…]()
 
 Mars Science Lab (MLS): $2.9 billion
 Mars Exploration Project (MEP): $1.2 billion
 #DataEngineering #AWS #OpenSource #NASA #Serverless #ETL #DataTransformation #CloudComputing #Pandas #API #IAM #CloudWatch #Python #DataLake #S3
+
+Cron Expresion
+
+![TriggeringWithCronexpression](https://github.com/user-attachments/assets/47ce1d12-b668-4d9e-ba24-bcedae944197)
+
+
+
+
+
+Cloud Watch Image
+
+![CloudWatch](https://github.com/user-attachments/assets/439b1830-8caf-48cb-ab00-73c8a487d528)
+
+
+Test Event
+
+![image](https://github.com/user-attachments/assets/fea74240-0839-42f9-9f16-ffb7166961a8)
+
 
