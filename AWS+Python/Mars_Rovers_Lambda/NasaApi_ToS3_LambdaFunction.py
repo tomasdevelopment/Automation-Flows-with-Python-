@@ -70,6 +70,13 @@ def lambda_handler(event, context):
         if rover_data:
             # Create pandas DataFrame
             df = pd.DataFrame(rover_data)
+            missions_dict = {'Curiosity':['Mars Science Lab (MLS)',2.9e9],
+            'Opportunity':['Mars Exploration Project (MEP)',1.2e9],
+            'Spirit':['Mars Exploration Project (MEP)',1.2e9]}
+            # Creating 'Mission' and 'Mission Cost' columns by mapping from the dictionary Adding something that the data does not have
+            df['Mission'] = df['Name'].map(lambda x: missions_dict[x][0])
+            df['Mission Cost USD'] = df['Name'].map(lambda x: missions_dict[x][1])
+
             
             # Create a BytesIO object to store the Excel file
             excel_file = BytesIO()
