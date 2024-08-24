@@ -4,7 +4,8 @@ https://github.com/user-attachments/assets/1edba6dc-8482-4b7e-adc4-193bf18cc32e
 
 Nasa Rovers AWS Event Bridge 
 
-![FunctionOverview](h
+
+![FunctionOverview](https://github.com/user-attachments/assets/5bb6355f-4a34-4f6d-8f37-df7d0cbad1c5)
 
 
 ttps://github.com/user-attachments/assets/d40bb25c-d6d2-4a83-920a-7e40d0a0bbae)
