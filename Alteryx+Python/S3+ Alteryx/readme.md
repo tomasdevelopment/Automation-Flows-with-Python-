@@ -1,6 +1,7 @@
 Using Alteryx Embedded S3 Input and Output with Python for Data Transformation
 In this guide, you'll learn how to leverage Alteryx's embedded S3 input and output capabilities in conjunction with Python to efficiently transform data. We'll walk through setting up your Alteryx workflow, integrating Python scripts for data manipulation, and managing data storage using Amazon S3.
 
+
 Table of Contents
 Prerequisites
 Alteryx Workflow Overview
@@ -13,6 +14,13 @@ Conclusion
 License
 Prerequisites
 Before diving into the workflow, ensure you have the following:
+
+THIS IS HOW YOU HAVE TO SPELL YOUR AMAZON s3 url
+
+![Uploading image.png…]()
+
+ 
+your-bucket.s3.amazonaws.com/Folder/datafile.xlsx
 
 Alteryx Designer installed on your machine.
 An Amazon S3 account with the necessary permissions to read from and write to your desired buckets.
@@ -66,9 +74,8 @@ Select Data Format: Choose the appropriate format (e.g., CSV, JSON) for your out
 Run a Test: Ensure that the tool can successfully write the transformed data to the specified S3 location 
 S3 output with the transformed data
 
-![image](https://github.com/user-attachments/assets/6ea0e6d5-5512-49b2-a2f4-ae93fbfcdfd9)
+![image](https://github.com/user-attachments/assets/8e3d9f72-d31b-4f11-9707-500877a39874)
 
-
-
+Cyberduck showing us the result
 
 ![image](https://github.com/user-attachments/assets/35fd7c13-a11a-4064-be1a-885640df0cb7)
