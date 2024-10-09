@@ -65,6 +65,9 @@ APIs for Beginners - Integrate All the Systems! (alteryx.com)
 
 And the Genious Example using Alteryx tools instead of this very beginner Pythonic oriented example:
 
+You can see how Alteryx  tool parse Json, can replace the function  pd.json_normalize  and the Alteryx crosstab tool replaces the pythonic solution df['data'] = df['DownloadData_parsed'].apply(lambda x: x.get('data', [])).
+
+
 
 
 
