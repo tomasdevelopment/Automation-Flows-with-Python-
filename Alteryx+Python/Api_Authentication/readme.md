@@ -22,6 +22,9 @@ In this article, we will explore how Alteryx tools can simplify API authenticati
 
 Let's begin by reviewing the first approach, where we use the Text Input tool to write the URL. This is followed by using the Download Tool, connected to that input, to refer to the URL and send the request. In this example, we also use the Headers tab to authenticate and request a JSON response.
 
+![input](https://github.com/user-attachments/assets/d33430c9-ba8f-473c-b75e-785b1af46ea9)
+
+
 ![headers download tool](https://github.com/user-attachments/assets/aaa1e5fa-0f46-4b7f-b0d0-5c494137b175)
 
 
