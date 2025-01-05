@@ -33,8 +33,7 @@ SQL_Python/
 ## Features
 
 - Simple performance comparison between SQLAlchemy and psycopg2
-- It was tested on an Azure Postgre flexible server on around 1# vCores, 16# GiB memory, 3200 max iops)
- 30.000 rows of structured data. 
+- It was tested on an Azure Postgre flexible server on aprox 3200 max iops
 - Real-world testing with large datasets
 - Azure Function implementation
 - Clean, modular code structure
