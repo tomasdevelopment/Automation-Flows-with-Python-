@@ -1,4 +1,4 @@
-# Python SQL Performance Testing
+# Python Postgre SQL Performance Testing
 
 A practical comparison of SQLAlchemy and psycopg2 performance with real-world data.
 
