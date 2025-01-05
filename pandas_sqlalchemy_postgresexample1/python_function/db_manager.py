@@ -15,7 +15,7 @@ class DatabaseManager:
         self._engine = None
         self._psycopg_conn = None
 
-    def get_sqlalchemy_engine(self) -> Engine:
+    def sqlalchemy_engine_getter(self) -> Engine:
         """Creates SQLAlchemy engine with proper configuration"""
         if not self._engine:
             connection_string = (
@@ -40,12 +40,6 @@ class DatabaseManager:
                 sslmode='require'
             )
         return self._psycopg_conn
-
-    def set_role(self, role: str) -> None:
-        """Sets PostgreSQL role for the current connection"""
-        with self.get_sqlalchemy_engine().connect() as conn:
-            conn.execute(text(f"SET ROLE {role};"))
-            logging.info(f"Role set to '{role}' successfully.")
 
     def cleanup(self):
         """Closes all database connections"""
