@@ -33,7 +33,8 @@ SQL_Python/
 ## Features
 
 - Simple performance comparison between SQLAlchemy and psycopg2
-- It was tested on an Azure flexible server on around 30.000 rows of structured data. 
+- It was tested on an Azure Postgre flexible server on around 1# vCores, 16# GiB memory, 3200 max iops)
+ 30.000 rows of structured data. 
 - Real-world testing with large datasets
 - Azure Function implementation
 - Clean, modular code structure
@@ -58,7 +59,9 @@ pip install azure-functions sqlalchemy psycopg2-binary
 
 ## Usage
 
-Make a request to the Azure Function endpoint:
+Make a request to the Azure Function endpoint or curl your local if testing on local azure extensions
+curl -v -X POST "http://localhost:7071/api/http_trigger"
+:
 ```
 GET /api/compare_spells
 ```
