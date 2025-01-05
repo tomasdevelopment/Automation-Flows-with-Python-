@@ -33,6 +33,7 @@ SQL_Python/
 ## Features
 
 - Simple performance comparison between SQLAlchemy and psycopg2
+- It was tested on an Azure flexible server on around 30.000 rows of structured data. 
 - Real-world testing with large datasets
 - Azure Function implementation
 - Clean, modular code structure
